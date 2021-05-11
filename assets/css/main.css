@@ -1,0 +1,103 @@
+/*COLORS VARIABLES*/
+:root {
+  --white: #ffffff;
+  --light-gray: #eeeeee;
+  --grey: #606060;
+  --black: #231F20;
+  --blue:#0A48B3;
+  --dark-blue:#172B4D;
+  --verdecito:#2dce89;
+  --Roboto: "Roboto", sans-serif;
+}
+
+body, p, .anspress {
+  font-family: var(--Roboto);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.main-wrap {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0 1fr;
+}
+.main-wrap .side-bar {
+  background-color: var(--dark-blue);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 999;
+  transition: all ease-in-out 0.3s;
+}
+.main-wrap .side-bar ul.nav-menu {
+  padding-left: 0;
+  padding-top: 20px;
+}
+.main-wrap .side-bar ul.nav-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  list-style: none;
+}
+.main-wrap .side-bar ul.nav-menu li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.main-wrap .side-bar ul.nav-menu li a.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+  background: transparent;
+  outline: none !important;
+  transition: color 0.2s ease-in-out;
+  padding: 15px 20px 15px 0;
+  color: #9aadc2;
+}
+.main-wrap .side-bar ul.nav-menu li a.nav-link:hover {
+  color: #fff;
+}
+.main-wrap .side-bar ul.nav-menu li a.nav-link i {
+  color: var(--verdecito);
+  margin: 0 10px 0 5px;
+  font-size: 1.4rem;
+}
+.main-wrap .side-bar.show {
+  left: 0;
+  transition: all ease-in-out 0.2s;
+}
+.main-wrap .side-bar .close .btn {
+  background-color: var(--verdecito);
+  border: solid 1px var(--verdecito);
+  width: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: 0 auto;
+}
+.main-wrap .side-bar .close .btn i {
+  margin: 0 10px 0 0;
+}
+.main-wrap .main-content {
+  position: relative;
+  z-index: 20;
+  background-color: antiquewhite;
+}
+.main-wrap .main-content .nav-mobile {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+}
+.main-wrap .main-content .nav-mobile img {
+  width: 100%;
+}
+.main-wrap .main-content .nav-mobile button {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 15px;
+}/*# sourceMappingURL=main.css.map */

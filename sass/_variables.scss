@@ -1,0 +1,31 @@
+
+
+/*COLORS VARIABLES*/
+:root{
+    --white: #ffffff;
+    --light-gray: #eeeeee;
+    --grey:  #606060;
+    --black: #231F20;
+    --blue:#0A48B3;
+    --dark-blue:#172B4D;
+    --verdecito:#2dce89;
+
+    //############################
+    --Roboto: 'Roboto', sans-serif;
+}
+body, p, .anspress {
+    font-family: var(--Roboto);
+    font-weight: 400;
+    line-height: 1.7;
+}
+@mixin flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
